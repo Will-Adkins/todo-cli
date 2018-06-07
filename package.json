@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Will-Adkins/todo-cli/issues"
   },
-  "homepage": "https://github.com/Will-Adkins/todo-cli#readme"
+  "homepage": "https://github.com/Will-Adkins/todo-cli#readme",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
 }
