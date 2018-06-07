@@ -1,0 +1,5 @@
+[
+  { "text": "party hardy", "completed": true, "id": 1 },
+  { "text": "write code", "completed": false, "id": 2 },
+  { "text": "eat dinner", "completed": false, "id": 3 }
+]
