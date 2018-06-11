@@ -1,11 +1,13 @@
 const { head } = require('ramda')
 const add = require('./cmd/add')
+const ls = require('./cmd/ls')
+
 const [execPath, jsPath, cmd, ...rest] = process.argv
 
-// console.log(handleCommand(cmd))
+console.log(handleCommand(cmd))
 
 function handleCommand(cmd) {
-  // init, rm, add, list commands
+  // init, rm, add, ls commands
   switch (cmd) {
     case 'add':
       return add(rest)
@@ -13,8 +15,8 @@ function handleCommand(cmd) {
       return 'asked for rm cmd'
     case 'init':
       return 'asked for init cmd'
-    case 'list':
-      return 'asked for list cmd'
+    case 'ls':
+      return ls()
     default:
       return `${cmd} is not supported`
   }

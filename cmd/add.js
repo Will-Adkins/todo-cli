@@ -7,6 +7,8 @@
 // 5) list the todos
 
 const store = require('../lib/store.js')
+const ls = require('./ls')
+
 const { join, append } = require('ramda')
 
 module.exports = function(arrWords) {
@@ -24,6 +26,8 @@ module.exports = function(arrWords) {
 
   // 4) set() the array of todos to the todos.json file
   store.set(newArr)
+  console.log('here')
 
   // 5) list the todos
+  return ls()
 }
